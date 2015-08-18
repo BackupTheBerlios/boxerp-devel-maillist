@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Boxerp-devel] Winforms databinder
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/boxerp-devel/2007-October/index.html" >
+   <LINK REL="made" HREF="mailto:boxerp-devel%40lists.berlios.de?Subject=Re%3A%20%5BBoxerp-devel%5D%20Winforms%20databinder&In-Reply-To=%3C31c4dea90710150233x41c76224l66291f30fe8f11a2%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000015.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Boxerp-devel] Winforms databinder</H1>
+    <B>Carlos Ble</B> 
+    <A HREF="mailto:boxerp-devel%40lists.berlios.de?Subject=Re%3A%20%5BBoxerp-devel%5D%20Winforms%20databinder&In-Reply-To=%3C31c4dea90710150233x41c76224l66291f30fe8f11a2%40mail.gmail.com%3E"
+       TITLE="[Boxerp-devel] Winforms databinder">ble.jurado at gmail.com
+       </A><BR>
+    <I>Mon Oct 15 11:33:21 CEST 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000015.html">[Boxerp-devel] commits
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#16">[ date ]</a>
+              <a href="thread.html#16">[ thread ]</a>
+              <a href="subject.html#16">[ subject ]</a>
+              <a href="author.html#16">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I've been reviewing your commits Jay,... good job man!. Nice stuff!. I see a
+confusion though.
+The class you called WinFormsBindableWrapper should be called DataBinder and
+it shouldn't extend BindableWrapper.
+The BindableWrapper classes (all the classes extending the
+AbstractBindableWrapper) are intened to wrap business objects, they
+shouldn't be
+related to any UI directly.
+As Gtk# doesn't support databinding, I wrote a DataBinder class that reads
+the databinding information from XAML (as WPF) and binds a form
+to a class that extends the AbstractBindableWrapper. Those gtk files are not
+in the VS solution file but in the MonoDevelop one but you can see them
+in their folders.
+The Winforms DataBinder can do both: bind the object reading a xaml file
+(using the existing XamlParser and BindingMetadata classes) or, as you
+tryied, reading the form properties through reflection.
+For WPF this is not necesary as this is already built-in and you can bind
+through the DataContext property of the form.
+I've added some classes and moved some files to help you with the
+implementation. Have a look at the client-howto in the wiki for a better
+understanding
+of the BindableWrapper thing.
+The winforms databinding sounds very interesting.
+Thanks
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/boxerp-devel/attachments/20071015/f7767ef2/attachment.html">https://lists.berlios.de/pipermail/boxerp-devel/attachments/20071015/f7767ef2/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000015.html">[Boxerp-devel] commits
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#16">[ date ]</a>
+              <a href="thread.html#16">[ thread ]</a>
+              <a href="subject.html#16">[ subject ]</a>
+              <a href="author.html#16">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/boxerp-devel">More information about the Boxerp-devel
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Boxerp-devel] Fwd:  BindableCollection
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/boxerp-devel/2007-October/index.html" >
+   <LINK REL="made" HREF="mailto:boxerp-devel%40lists.berlios.de?Subject=Re%3A%20%5BBoxerp-devel%5D%20Fwd%3A%20%20BindableCollection&In-Reply-To=%3C31c4dea90710120849g597dc61cmbcfbd6e8fbf6aed6%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000011.html">
+   <LINK REL="Next"  HREF="000010.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Boxerp-devel] Fwd:  BindableCollection</H1>
+    <B>Carlos Ble</B> 
+    <A HREF="mailto:boxerp-devel%40lists.berlios.de?Subject=Re%3A%20%5BBoxerp-devel%5D%20Fwd%3A%20%20BindableCollection&In-Reply-To=%3C31c4dea90710120849g597dc61cmbcfbd6e8fbf6aed6%40mail.gmail.com%3E"
+       TITLE="[Boxerp-devel] Fwd:  BindableCollection">ble.jurado at gmail.com
+       </A><BR>
+    <I>Fri Oct 12 17:49:59 CEST 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000011.html">[Boxerp-devel] BindableCollection
+</A></li>
+        <LI>Next message: <A HREF="000010.html">[Boxerp-devel] BindableCollection
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I forgot to forward to the list
+
+---------- Forwarded message ----------
+From: Carlos Ble &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">ble.jurado at gmail.com</A>&gt;
+Date: 12-oct-2007 16:49
+Subject: Re: [Boxerp-devel] BindableCollection
+To: &quot;Jay R. Wren&quot; &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">jrwren at xmtp.net</A>&gt;
+
+We should have something in the wiki explaining the project structure. I can
+create something for you this weekend. If you figure it out before you can
+do it yourself.
+Wiki: boxerp.org
+I have to update the client-howto by the way, I'll do it this weekend.
+I think there are no tests for the BindableCollection, just commit and I'll
+test it. If you can add some BindableCollection tests to the
+bindableObjectTests, that would be nice.
+Thanks
+
+2007/10/12, Jay R. Wren &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">jrwren at xmtp.net</A>&gt;:
+&gt;<i>
+</I>&gt;<i> I had a difficult time finding a test which exercised that code.
+</I>&gt;<i>
+</I>&gt;<i> I ran bindableObjectsTests and they all passed.
+</I>&gt;<i>
+</I>&gt;<i> I'm still familiarizing myself with the project structure. Don't commit
+</I>&gt;<i> if you think things will break ;)
+</I>&gt;<i>
+</I>&gt;<i> --
+</I>&gt;<i> Jay
+</I>&gt;<i>
+</I>&gt;<i> Carlos Ble wrote:
+</I>&gt;<i> &gt; Cool! Were you be able to do any test?
+</I>&gt;<i> &gt; Anyway, I'm using those classes right now so I will test them ASAP.
+</I>&gt;<i> &gt; Please commit the changes including some explanation in the svn log.
+</I>&gt;<i> &gt; Thanks very much
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; 2007/10/12, Jay R. Wren &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">jrwren at xmtp.net</A> &lt;mailto:<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">jrwren at xmtp.net</A>&gt;&gt;:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;     A pretty easy fix.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;     ComboBox now uses BindableCollection, and BindableCollection now
+</I>&gt;<i> &gt;     doesn't &quot; new &quot; any non-virtual methods.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;     On 10/11/07, * Jay R. Wren* &lt; <A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">jrwren at xmtp.net</A>
+</I>&gt;<i> &gt;     &lt;mailto:<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">jrwren at xmtp.net</A>&gt;&gt; wrote:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;         No problem.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;         On 10/11/07, *Carlos Ble* &lt; <A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">ble.jurado at gmail.com</A>
+</I>&gt;<i> &gt;         &lt;mailto:<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">ble.jurado at gmail.com</A>&gt;&gt; wrote:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;             Hei Jay,
+</I>&gt;<i> &gt;             The BindableCollection in the Boxerp.Client has the same
+</I>&gt;<i> &gt;             problem than the InterceptedList but this time there are
+</I>&gt;<i> &gt;             more interfaces to implement. Would you be able to have a
+</I>&gt;<i> &gt;             look and fix that? :-)
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;             Thanks
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;             _______________________________________________
+</I>&gt;<i> &gt;             Boxerp-devel mailing list
+</I>&gt;<i> &gt;             <A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">Boxerp-devel at lists.berlios.de</A>
+</I>&gt;<i> &gt;             &lt;mailto:<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">Boxerp-devel at lists.berlios.de</A>&gt;
+</I>&gt;<i> &gt;             <A HREF="https://lists.berlios.de/mailman/listinfo/boxerp">https://lists.berlios.de/mailman/listinfo/boxerp</A> -devel
+</I>&gt;<i> &gt;             &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/boxerp-devel">https://lists.berlios.de/mailman/listinfo/boxerp-devel</A>&gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i>
+</I>&gt;<i>
+</I>-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/boxerp-devel/attachments/20071012/d639b68f/attachment.html">https://lists.berlios.de/pipermail/boxerp-devel/attachments/20071012/d639b68f/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000011.html">[Boxerp-devel] BindableCollection
+</A></li>
+	<LI>Next message: <A HREF="000010.html">[Boxerp-devel] BindableCollection
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/boxerp-devel">More information about the Boxerp-devel
+mailing list</a><br>
+</body></html>
